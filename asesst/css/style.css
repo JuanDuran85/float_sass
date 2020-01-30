@@ -24,6 +24,9 @@
   list-style-position: inside;
 }
 
+.section_ejemplo p, .section_ejemplo2 p {
+  clear: both;
+}
 .section_ejemplo p:first-child, .section_ejemplo2 p:first-child {
   font-size: 24px;
 }
@@ -35,12 +38,14 @@
   width: 170px;
   height: 170px;
   margin-left: 15px;
+  float: left;
 }
 
 .section_ejemplo2 p img {
   width: 170px;
   height: 170px;
   margin-left: 15px;
+  float: right;
 }
 
 .section_float_box1 {
@@ -62,6 +67,7 @@
 }
 
 .section_float::after {
+  content: "Texto extra";
   clear: both;
   display: table;
 }

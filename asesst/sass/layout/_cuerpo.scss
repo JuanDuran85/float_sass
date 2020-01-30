@@ -21,7 +21,7 @@
   }
 
 .section_ejemplo p, .section_ejemplo2 p {
-
+    clear: both;
     &:first-child {
         font-size: $tamano1;
         
@@ -35,13 +35,14 @@
     width: $valor1;
     height: $valor1;
     margin-left: $valor2;
-
+    float: left;
 }
 
 .section_ejemplo2 p img {
     width: $valor1;
     height: $valor1;
     margin-left: $valor2;
+    float: right;
 }
 
 .section_float_box1 {
@@ -63,6 +64,7 @@
   }
   
   .section_float::after {
+      content: "Texto extra";
     clear: both;
     display: table;
   }
