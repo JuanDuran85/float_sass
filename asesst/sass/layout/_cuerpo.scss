@@ -20,7 +20,7 @@
     list-style-position: inside;
   }
 
-.section_ejemplo p {
+.section_ejemplo p, .section_ejemplo2 p {
 
     &:first-child {
         font-size: $tamano1;
@@ -35,4 +35,34 @@
     width: $valor1;
     height: $valor1;
     margin-left: $valor2;
+
 }
+
+.section_ejemplo2 p img {
+    width: $valor1;
+    height: $valor1;
+    margin-left: $valor2;
+}
+
+.section_float_box1 {
+    background: #bbb;
+}
+
+.section_float_box2 {
+    background: #ccc;
+}
+
+.section_float_box3 {
+    background: #ddd;
+}
+
+.section_float_box1, .section_float_box2, .section_float_box3 {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+  }
+  
+  .section_float::after {
+    clear: both;
+    display: table;
+  }

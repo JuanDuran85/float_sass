@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .section_texto {
@@ -23,10 +24,10 @@
   list-style-position: inside;
 }
 
-.section_ejemplo p:first-child {
+.section_ejemplo p:first-child, .section_ejemplo2 p:first-child {
   font-size: 24px;
 }
-.section_ejemplo p:first-child:hover {
+.section_ejemplo p:first-child:hover, .section_ejemplo2 p:first-child:hover {
   text-transform: uppercase;
 }
 
@@ -34,6 +35,35 @@
   width: 170px;
   height: 170px;
   margin-left: 15px;
+}
+
+.section_ejemplo2 p img {
+  width: 170px;
+  height: 170px;
+  margin-left: 15px;
+}
+
+.section_float_box1 {
+  background: #bbb;
+}
+
+.section_float_box2 {
+  background: #ccc;
+}
+
+.section_float_box3 {
+  background: #ddd;
+}
+
+.section_float_box1, .section_float_box2, .section_float_box3 {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.section_float::after {
+  clear: both;
+  display: table;
 }
 
 /*# sourceMappingURL=style.css.map */
