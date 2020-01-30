@@ -12,3 +12,13 @@
         }
     }
 }
+
+.section_ejemplo p:first-child {
+    font-size: $tamano1;
+}
+
+.section_ejemplo p img {
+    width: $valor1;
+    height: $valor1;
+    margin-left: $valor2;
+}
