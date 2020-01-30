@@ -1,0 +1,14 @@
+.section_texto {
+    background-color: rgba($color1, $alpha);
+    font-size: $tamano1;
+    
+    span {
+        text-decoration-line: underline;
+        
+        &:hover {
+            background-color: $verde;
+            text-transform: $mayus;
+            cursor: $cursor;
+        }
+    }
+}
