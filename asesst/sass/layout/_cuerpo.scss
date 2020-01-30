@@ -1,6 +1,7 @@
 .section_texto {
     background-color: rgba($color1, $alpha);
     font-size: $tamano1;
+    margin: $valor2;
     
     span {
         text-decoration-line: $raya;
@@ -13,8 +14,21 @@
     }
 }
 
-.section_ejemplo p:first-child {
-    font-size: $tamano1;
+.section_ul_li {
+    padding: $valor2;
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+.section_ejemplo p {
+
+    &:first-child {
+        font-size: $tamano1;
+        
+        &:hover {
+            text-transform: $mayus;
+        }
+    }
 }
 
 .section_ejemplo p img {

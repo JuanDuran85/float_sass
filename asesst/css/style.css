@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .section_texto {
   background-color: rgba(0, 0, 255, 0.5);
   font-size: 24px;
+  margin: 15px;
 }
 .section_texto span {
   text-decoration-line: underline;
@@ -11,8 +17,17 @@
   cursor: pointer;
 }
 
+.section_ul_li {
+  padding: 15px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
 .section_ejemplo p:first-child {
   font-size: 24px;
+}
+.section_ejemplo p:first-child:hover {
+  text-transform: uppercase;
 }
 
 .section_ejemplo p img {
