@@ -3,7 +3,7 @@
     font-size: $tamano1;
     
     span {
-        text-decoration-line: underline;
+        text-decoration-line: $raya;
         
         &:hover {
             background-color: $verde;
